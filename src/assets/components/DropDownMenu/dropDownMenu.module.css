@@ -1,0 +1,48 @@
+.dropDown {
+  display: none;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .dropDown {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 32px;
+    position: relative;
+  }
+
+  .dropDownContent {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-height: 0px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 83px;
+    transition:max-height 400ms ease-in-out;
+    width: 150px;
+  }
+
+  .displayDropDown {
+    background-color: var(--color-background);
+    position: absolute;
+    max-height: 600px;
+    z-index: 10;
+  }
+
+  .displayOverlay {
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 9;
+  }
+
+  .menuBtn {
+    height: 50px;
+  }
+}

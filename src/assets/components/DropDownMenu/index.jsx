@@ -1,0 +1,36 @@
+import { useState } from "react"
+import { FanIcon } from "@phosphor-icons/react"
+import styles from "./dropDownMenu.module.css"
+
+const DropDownMenu = ({pageName, updatePage}) => {
+  
+  const [displayMenu, setDisplayMenu] = useState(false)
+
+  const handleClick = () => {
+    setDisplayMenu(!displayMenu)
+    !displayMenu ? document.body.classList.add(`menuScroll`)
+                 : document.body.classList.remove(`menuScroll`)
+  }
+
+  const clickPage = (pageTitle) => {
+    updatePage(pageTitle)
+  }
+
+  return (
+    <div className={styles.dropDown}>
+      <FanIcon size={32} onClick={handleClick} />
+      {displayMenu && (
+        <div className={styles.displayOverlay} onClick={handleClick}></div>
+      )}
+        <div className={`${styles.dropDownContent} ${displayMenu ? styles.displayDropDown : ``}`}>
+          {pageName.map((pageName, index) => 
+            {return (
+              <button className={styles.menuBtn} key={index} onClick={() => (clickPage(pageName.value))}>{pageName.name}</button>
+            )
+          })}
+        </div>
+    </div>
+  )
+}
+
+export default DropDownMenu

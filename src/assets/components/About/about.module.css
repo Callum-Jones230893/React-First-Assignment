@@ -1,0 +1,19 @@
+.aboutWrapper {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+
+.pageTitle {
+  font-size: 2rem;
+}
+
+.descriptionWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.pageDescription {
+  color: rgb(165, 165, 165);
+}

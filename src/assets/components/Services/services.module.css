@@ -1,0 +1,19 @@
+.serviceWrapper {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.serviceCard {
+  display: flex;
+  flex: 0 0 calc(50% - 15px);
+}
+
+.btnContainer {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  width: 50vw;
+}

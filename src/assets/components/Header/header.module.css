@@ -1,0 +1,23 @@
+.headerWrapper {
+  color: white;
+  border-bottom: 1px solid gray;
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  width: 100vw;
+}
+
+.title {
+  display: block;
+  padding-left: 32px;
+}
+
+/* @keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+} */

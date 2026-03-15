@@ -1,0 +1,8 @@
+.footerWrapper {
+  background-color: #38bff809;
+  border-top: 1px solid gray;
+  display: flex;
+  height: 75px;
+  justify-content: center;
+  width: 100vw;
+}

@@ -1,0 +1,96 @@
+.coreWrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 128px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .coreWrapper {
+    padding-top: 32px;
+  }
+}
+
+.coreTitle {
+  color: white;
+  font-size: 1.5rem;
+  padding: 24px;
+}
+
+.scrollStrip {
+  background-color: var(--color-background);
+  border: 1px solid #38bff81c;
+  color: rgba(255, 255, 255, 0.575);
+  display: flex;
+  height: 48px;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .scrollStrip {
+    display: none;
+  }
+}
+
+.coreCardContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  width: 50vw;
+}
+
+@media (max-width: 768px) {
+  .coreCardContainer {
+    flex-direction: column;
+    width: 100vw;
+  }
+}
+
+.coreCard {
+  color: rgb(165, 165, 165);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  width: calc(25% - 20px);
+}
+
+.coreCard:hover {
+  background-color: #38bff80e;
+  box-shadow: 0 0 15px 2px rgba(56, 189, 248, 0.08);
+  cursor: pointer;
+}
+
+.coreCard:nth-child(2),
+.coreCard:nth-child(3),
+.coreCard:nth-child(4) {
+  border-left: 1px solid rgba(64, 224, 208, 0.596);
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media (max-width: 768px) {
+  .coreCard,
+  .coreCard:nth-child(2),
+  .coreCard:nth-child(3),
+  .coreCard:nth-child(4) {
+    border-left: none;
+    border-top: 1px solid rgba(64, 224, 208, 0.596);
+    height: calc(25% - 20px);
+    margin: 0 0 12px 12px;
+    padding: 16px 0px 12px 12px;
+    width: 80%;
+  }
+}
+
+.coreCardSubtitle {
+  color: white;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .coreCardSubtitle {
+    margin: 0;
+  }
+}
