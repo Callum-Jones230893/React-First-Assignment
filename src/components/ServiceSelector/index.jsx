@@ -1,6 +1,6 @@
 // import styles from "./serviceSelector.module.css"
 import ServiceContent from "../ServiceContent";
-import { servicePicker } from "../../../data/data"
+import { servicePicker } from "../../data/data"
 
 const ServiceSelector = ({selectedService}) => {
   const selected = servicePicker(selectedService)

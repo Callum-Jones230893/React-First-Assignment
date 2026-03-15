@@ -1,5 +1,5 @@
 import styles from "./coreServices.module.css"
-import { services } from "../../../data/data"
+import { services } from "../../data/data"
 
 const CoreServices = () => {
   return (

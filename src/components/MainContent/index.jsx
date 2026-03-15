@@ -1,6 +1,6 @@
 import CoreServices from "../CoreServices"
 import styles from "./mainContent.module.css"
-import { getPageName } from "../../../data/data"
+import { getPageName } from "../../data/data"
 
 const MainContent = ({updateHome, dms}) => {
   const {companyName, motto} = dms

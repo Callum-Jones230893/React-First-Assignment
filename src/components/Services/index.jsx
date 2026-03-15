@@ -1,6 +1,6 @@
 import { useState } from "react"
 import styles from "./services.module.css"
-import { services } from "../../../data/data"
+import { services } from "../../data/data"
 import ServiceSelector from "../ServiceSelector"
 
 const Services = ({dms}) => {

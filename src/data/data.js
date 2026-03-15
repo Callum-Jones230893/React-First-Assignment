@@ -78,7 +78,7 @@ export const dms = {
              When you choose us, you choose a partner dedicated to your success. Thank you for considering us as your trusted facility management solution.`,
   options: "Our Cleaning and Maintenance Solutions",
   shortDescription: "Perth's Specialist Industrial and Commercial Cleaning and Maintenance Provider",
-  logo : ""
+  logo : "DMS_Main.png"
 }
 
 export const servicePicker = (serviceType) => {

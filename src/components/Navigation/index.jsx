@@ -2,23 +2,23 @@ import { useState } from "react"
 import styles from "./navigation.module.css"
 import DropDownMenu from "../DropDownMenu"
 
-const Navigation = ({changePage, pageTitle}) => {
+const Navigation = ({changePage, pageName}) => {
 
-  const handleClick = (pageTitle) => {
-    changePage(pageTitle)
+  const handleClick = (pageName) => {
+    changePage(pageName)
 // console.log(pageTitle)
   }
 
   return (
     <>
       <div className={styles.navWrapper}>
-        {pageTitle.map((pageName, index) => {
+        {pageName.map((pageName, index) => {
           return  (
             <button className={styles.navBtn} key={index} onClick={() => (handleClick(pageName.value))}>{pageName.name}</button>
           )
         })}
       </div> 
-      <DropDownMenu pageName={pageTitle} updatePage={changePage} />
+      <DropDownMenu pageName={pageName} updatePage={changePage} />
     </>
   )
 }

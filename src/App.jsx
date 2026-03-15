@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import './App.css'
 import { dms, pages } from './data/data'
-import Header from './assets/components/Header'
-import Body from './assets/components/Body'
-import Footer from './assets/components/Footer'
+import Header from './components/Header'
+import Body from './components/Body'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <Header updatePage={setPageTitle} pages={pages} />
+      <Header updatePage={setPageTitle} dms={dms} pageTitle={pages} />
       <Body pageType={pageTitle} updatePage={setPageTitle} dms={dms} pageTitle={pages} />
       <Footer />
     </>
