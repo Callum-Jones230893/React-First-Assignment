@@ -14,6 +14,7 @@ const DropDownMenu = ({pageName, updatePage}) => {
 
   const clickPage = (pageTitle) => {
     updatePage(pageTitle)
+    setDisplayMenu(false)
   }
 
   return (

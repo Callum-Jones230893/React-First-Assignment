@@ -14,6 +14,7 @@
   }
 
   .dropDownContent {
+    background-color: var(--color-background);
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -24,13 +25,11 @@
     top: 102px;
     transition:max-height 400ms ease-in-out;
     width: 150px;
+    z-index: 10;
   }
 
   .displayDropDown {
-    background-color: var(--color-background);
-    position: absolute;
     max-height: 600px;
-    z-index: 10;
   }
 
   .displayOverlay {
