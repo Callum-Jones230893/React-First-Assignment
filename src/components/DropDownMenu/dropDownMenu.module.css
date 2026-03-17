@@ -13,6 +13,15 @@
     position: relative;
   }
 
+  .icon {
+    transform: rotate(0deg);
+    transition: transform 400ms ease-in-out;
+  }
+
+  .iconOpen {
+    transform: rotate(180deg);
+  }
+
   .dropDownContent {
     background-color: var(--color-background);
     display: flex;

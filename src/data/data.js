@@ -90,37 +90,3 @@ export const servicePicker = (serviceType) => {
 export const getPageName = (value) => {
   return pages.find(page => page.value === value)
 }
-
-// console.log(services)
-
-// import { services } from "../../../data/data"
-
-// const MyComponent = () => {
-//   const [selectedCategories, setSelectedCategories] = useState([])
-
-//   const handleChange = (e) => {
-//     const value = e.target.value
-//     setSelectedCategories(
-//       selectedCategories.includes(value)
-//         ? selectedCategories.filter(cat => cat !== value)
-//         : [...selectedCategories, value]
-//     )
-//   }
-
-//   const filtered = services.filter(service => 
-//     selectedCategories.includes(service.category)
-//   )
-
-//   return (
-//     <>
-//       {/* checkboxes let user pick categories */}
-//       <input type="checkbox" value="coolRoom" onChange={handleChange} />
-//       <input type="checkbox" value="hvac" onChange={handleChange} />
-
-//       {/* filtered shows only matching services */}
-//       {filtered.map((service, index) => (
-//         <div key={index}>{service.title}</div>
-//       ))}
-//     </>
-//   )
-// }
