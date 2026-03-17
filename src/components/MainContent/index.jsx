@@ -21,15 +21,15 @@ const MainContent = ({updateHome, dms}) => {
         </div>
         <div className={styles.sideContainer}>
           <div className={styles.sideCard}>
-            <h3>15</h3>
+            <h3></h3>
             <p></p>
           </div>
           <div className={styles.sideCard}>
-            <h3>15</h3>
+            <h3></h3>
             <p></p>
           </div>
           <div className={styles.sideCard}>
-            <h3>15</h3>
+            <h3></h3>
             <p></p>
           </div>
         </div>

@@ -18,3 +18,4 @@ export default ServiceSelector
 
 
 // DO I NEED THIS COMPONENT
+// Add image slider to this, so when displayed

@@ -54,7 +54,3 @@ button:hover {
   color: turquoise;
   transition: all 300ms ease-in;
 }
-
-.menuScroll {
-  overflow: hidden;
-}

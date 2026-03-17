@@ -8,14 +8,14 @@ const DropDownMenu = ({pageName, updatePage}) => {
 
   const handleClick = () => {
     setDisplayMenu(!displayMenu)
-    !displayMenu ? document.body.classList.add(`menuScroll`)
-                 : document.body.classList.remove(`menuScroll`)
+    !displayMenu ? document.body.style.overflow = 'hidden'
+                 : document.body.style.overflow = 'unset'
   }
 
   const clickPage = (pageTitle) => {
     updatePage(pageTitle)
     setDisplayMenu(false)
-    document.body.classList.remove(`menuScroll`)
+    document.body.style.overflow = 'unset'
   }
 
   return (
