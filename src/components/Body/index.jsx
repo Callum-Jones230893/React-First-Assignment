@@ -6,6 +6,8 @@ import About from "../About"
 import ContactForm from "../ContactForm"
 
 const Body = ({pageType, updatePage, dms, pageTitle}) => {
+  // const [serviceType, setServiceType] = useState(null) Pass down so that Core Services can navigate to services
+  // pass down both states update page and set service type, to change the page to "our services" and the selected service at the same time
 
   const COMPONENT = {Services, About, ContactForm}[pageType]
 
@@ -17,7 +19,3 @@ const Body = ({pageType, updatePage, dms, pageTitle}) => {
 }
 
 export default Body
-
-// Conditionally render Main content and Detailed content inside this.
-// Body should be controller for Main / Detailed content.
-// e.g "If page === null (default), render MainContent, else render DetailedContent (Detailed content will have conditional logic to choose what to render as its content"

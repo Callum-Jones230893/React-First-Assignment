@@ -36,14 +36,12 @@
 .coreCardContainer {
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  width: 50vw;
+  margin: 0 0 24px 0;
 }
 
 @media (max-width: 1440px) {
   .coreCardContainer {
     flex-direction: column;
-    width: 100vw;
   }
 }
 

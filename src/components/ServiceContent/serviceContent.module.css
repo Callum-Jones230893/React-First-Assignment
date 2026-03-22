@@ -4,3 +4,16 @@
   flex-wrap: wrap;
   width: 50vw;
 }
+
+.serviceImageWrapper {
+  display: flex;
+  height: auto;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+.serviceImage {
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}

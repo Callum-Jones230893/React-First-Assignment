@@ -2,7 +2,13 @@
   color: white;
   display: flex;
   flex-direction: column;
-  width: 50vw;
+  width: 60vw;
+}
+
+@media (max-width: 1024px) {
+  .aboutWrapper {
+    width: 80vw;
+  }
 }
 
 .pageTitle {
@@ -16,4 +22,17 @@
 
 .pageDescription {
   color: rgb(165, 165, 165);
+}
+
+.aboutImageWrapper {
+  display: flex;
+  height: auto;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+.aboutImage {
+  height: auto;
+  object-fit: cover;
+  width: 100%;
 }

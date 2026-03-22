@@ -1,7 +1,8 @@
 import styles from "./coreServices.module.css"
 import { services } from "../../data/data"
 
-const CoreServices = () => {
+const CoreServices = ({dms}) => {
+
   return (
     <div className={styles.coreWrapper}>
       <div className={styles.scrollStrip}>
@@ -25,3 +26,5 @@ const CoreServices = () => {
 }
 
 export default CoreServices
+
+// Core services, onClick navigate to the "Our services page", to immediately display the specific content the user clicked on

@@ -11,35 +11,35 @@ const CoolRoom = new Service(
   "Cold Storage/Cool Room Cleaning, Remediation and Protection",
   "Ensure the optimal performance and hygiene of your cool rooms with our professional cool room cleaning and maintenance services.",
   "Our expert team will thoroughly clean and sanitize your cool rooms, including temperature control systems, shelving, and storage areas. With our meticulous approach, we help maintain the quality, hygiene, food safety and shelf life of your stored items. Our optional Surface and Coil Protection service will vastly improve the hygiene of your Cold Storage areas and prolong the lifespan of your refrigeration equipment.",
-  ""
+  "coolroom.jpg"
 )
 const AC = new Service(
   "Air Conditioning",
   "Air Conditioning Cleaning, Remediation and Protection",
   "Keep your air conditioning systems running smoothly and efficiently with our comprehensive cleaning and maintenance services.",
   "Our skilled technicians will conduct a detailed inspection and  clean of your equipment to ensure your air conditioning system operates at its best, providing you with optimal indoor air quality and energy efficiency.",
-  ""
+  "ac.jpeg"
 )
 const HVACR = new Service(
   "HVAC-R System",
   "Custom HVAC-R System and Coil Cleaning, Remediation and Protection",
   "Improve the efficiency and longevity of your HVAC-R systems with our specialist cleaning and maintenance services.",
   "Our experienced technicians will utilise the latest technology, equipment and chemicals to meticulously clean all components, eliminating dirt, dust, and debris. Our services will enhance Airflow, Indoor Air Quality, prevent system breakdowns, and optimize energy efficiency. Coupled with our protection program, you will see the facility hygiene improved and life of your equipment extended.",
-  ""
+  "hvac.jpg"
 )
 const HACCP = new Service(
   "HACCP Compliance",
   "High-pressure Cleaning and Surface Treatment and Protection",
   "Industrial and commercial high-pressure cleaning is a service that involves using specialised equipment to remove dirt, grime and debris from various surfaces or structures in industrial or commercial settings.",
   "This process utilised high-pressure water to effectively clean and restore the condition and appearance of different surfaces, such as floors, walls, machinery and buildings. Our optional Surface Treatment and Protection solutions will ensure extended lifespan of your equipment - from rust protection to hydrophobic coatings, duct sealing and antimicrobial treatments, we have the solution.",
-  ""
+  "haccp.png"
 )
 const Preventative = new Service(
   "Preventative Maintenence",
   "Preventative Maintenance Programs",
   "Stay ahead of potential issues and extend the lifespan of your equipment with our selection of maintenance programs.",
   "Our proactive approach includes scheduled inspections and routine maintenance to identify and address problems before they lead to costly issues. By partnering with us for preventive maintenance, you can minimize downtime, optimize equipment performance, and maximize your operational efficiency.",
-  ""
+  "preventative.png"
 )
 
 export const services = [CoolRoom, HVACR, HACCP, AC, Preventative]
