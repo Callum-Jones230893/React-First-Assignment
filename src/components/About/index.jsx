@@ -5,7 +5,7 @@ const AboutUs = ({dms}) => {
   const {brief, message} = dms
   return (
     <div className={styles.aboutWrapper}>
-      {<h2 className={styles.pageTitle}></h2>}
+      <h2 className={styles.pageTitle}>About Us</h2>
       <h3 className={styles.pageBrief}>{brief}</h3>
       <div className={styles.descriptionWrapper}>
         <p>{message}</p>

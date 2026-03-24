@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   white-space: pre-line;
-  width: 60vw;
+  width: 20%;
 }
 
 @media (max-width: 1024px) {
@@ -13,7 +13,9 @@
 }
 
 .pageTitle {
+  color: #2C85D3;
   font-size: 2rem;
+  text-align: center;
 }
 
 .descriptionWrapper {
@@ -29,6 +31,7 @@
   display: flex;
   height: auto;
   margin: 20px auto;
+  padding-top: 24px;
   width: 200px;
 }
 

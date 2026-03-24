@@ -29,8 +29,8 @@ const MainContent = ({updateHome, dms}) => {
             <p>Awards for Customer Service.</p>
           </div>
           <div className={styles.sideCard}>
-            <h3>24/7</h3>
-            <p>Service</p>
+            <h3>8+</h3>
+            <p>Certifications</p>
           </div>
         </div>
       </div>

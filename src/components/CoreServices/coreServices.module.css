@@ -12,9 +12,10 @@
 }
 
 .coreTitle {
-  color: white;
+  color: #2C85D3;
   font-size: 1.5rem;
   padding: 24px;
+  text-decoration: underline 1px white;
 }
 
 .scrollStrip {
@@ -83,7 +84,7 @@
 }
 
 .coreCardSubtitle {
-  color: white;
+  color: #2C85D3;
   font-size: 1rem;
 }
 

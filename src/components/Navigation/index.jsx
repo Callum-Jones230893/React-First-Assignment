@@ -6,7 +6,6 @@ const Navigation = ({changePage, pageName}) => {
 
   const handleClick = (pageName) => {
     changePage(pageName)
-// console.log(pageTitle)
   }
 
   return (
@@ -24,14 +23,3 @@ const Navigation = ({changePage, pageName}) => {
 }
 
 export default Navigation
-
-// "Links" to each page
-
-// App > (Header, Body, Footer)
-// Header > (Header, Nav)
-// Navigation >
-// Body > Main
-//      > Detailed > About
-//                 > Services
-//                 > Contact
-// > Footer

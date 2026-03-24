@@ -13,4 +13,6 @@ const ServiceSelector = ({selectedService}) => {
   )
 }
 
+// add an image slider with before and after (otherwise component might be doing too little to justify a component)
+
 export default ServiceSelector

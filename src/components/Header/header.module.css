@@ -1,5 +1,5 @@
 .headerWrapper {
-  color: white;
+  color: #2C85D3;
   border-bottom: 1px solid gray;
   display: flex;
   font-weight: bold;
@@ -10,6 +10,7 @@
 
 .logoWrapper {
   align-items: center;
+  cursor: pointer;
   display: flex;
   height: 100px;
   padding-left: 32px;
