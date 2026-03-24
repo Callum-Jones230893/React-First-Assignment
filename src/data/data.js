@@ -71,13 +71,14 @@ export const pages = [Home, OurServices, AboutUs, ContactUs]
 export const dms = {
   companyName : "Diversified Maintenance Solutions",
   motto : "Your facilities, Our expertise",
-  brief: "We are more than just a cleaning and facility maintenance company; we are your trusted partner in ensuring the seamless operation and presentation of your commercial spaces.",
-  message: `With a commitment to excellence that spans over a decade, we have honed our expertise to deliver top-notch cleaning, maintenance, and facility management services tailored to your unique needs.
-             Our dedicated team of professionals is the heart and soul of our company. They bring unparalleled skills, unwavering dedication, and a keen eye for detail to every project, no matter how big or small.
-             We understand that the cleanliness and functionality of your space directly impact your business's success, and we take that responsibility seriously. We take pride in our commitment to sustainability, using eco-friendly products and adopting green practices whenever possible to reduce our environmental footprint. Our mission is to provide exceptional service while contributing positively to the well-being of our planet.
+  brief : `We are more than just a cleaning and facility maintenance company;\n
+           we are your trusted partner in ensuring the seamless operation and presentation of your commercial spaces.`,
+  message : `With a commitment to excellence that spans over a decade, we have honed our expertise to deliver top-notch cleaning, maintenance, and facility management services tailored to your unique needs.\n
+             Our dedicated team of professionals is the heart and soul of our company. They bring unparalleled skills, unwavering dedication, and a keen eye for detail to every project, no matter how big or small.\n
+             We understand that the cleanliness and functionality of your space directly impact your business's success, and we take that responsibility seriously. We take pride in our commitment to sustainability, using eco-friendly products and adopting green practices whenever possible to reduce our environmental footprint. Our mission is to provide exceptional service while contributing positively to the well-being of our planet.\n
              When you choose us, you choose a partner dedicated to your success. Thank you for considering us as your trusted facility management solution.`,
-  options: "Our Cleaning and Maintenance Solutions",
-  shortDescription: "Perth's Specialist Industrial and Commercial Cleaning and Maintenance Provider",
+  options : "Our Cleaning and Maintenance Solutions",
+  shortDescription : "Perth's Specialist Industrial and Commercial Cleaning and Maintenance Provider",
   logo : "DMS_Main.png"
 }
 
