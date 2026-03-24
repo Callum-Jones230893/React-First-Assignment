@@ -1,3 +1,9 @@
+.serviceWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .infoCard {
   display: flex;
   flex-direction: column;
@@ -6,14 +12,23 @@
 }
 
 .serviceImageWrapper {
+  box-shadow: 0 0 30px 5px rgba(56, 189, 248, 0.1);
   display: flex;
   height: auto;
-  margin-bottom: 20px;
-  width: 200px;
+  justify-content: center;
+  margin: 24px auto;
+  opacity: 0.7;
+  width: 300px;
 }
 
 .serviceImage {
   height: auto;
   object-fit: cover;
   width: 100%;
+}
+
+@media (max-width: 468px) {
+  .serviceImageWrapper {
+    width: 200px;
+  }
 }

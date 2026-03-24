@@ -17,6 +17,7 @@
 @media (max-width: 1024px) {
   .mainWrapper {
     flex-direction: column;
+    gap: 0;
     padding: 24px;
     margin: 0;
   }
@@ -29,9 +30,21 @@
   width: 30%;
 }
 
+@media (max-width: 468px) {
+  .heroWrapper {
+    width: 100%;
+  }
+}
+
 .landingTitle {
   color: white;
   font-size: 4rem;
+}
+
+@media (max-width: 1440px) {
+  .landingTitle {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -84,6 +97,12 @@
   border-left: 2.5px solid turquoise;
   box-shadow: 5px 7px #07111c;
   padding: 15px;
+}
+
+@media (max-width: 1024px) {
+  .sideCard {
+    height: 60px;
+  }
 }
 
 .sideCard:hover {

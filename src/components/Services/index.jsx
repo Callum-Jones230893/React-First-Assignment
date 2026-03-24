@@ -7,8 +7,16 @@ const Services = ({dms}) => {
   const {options, shortDescription} = dms
 
   const [serviceType, setServiceType] = useState(null)
+  const [expandServices, setExpandServices] = useState(false)
 
-  // console.log(serviceType)
+  const displayServiceBtn = () => {
+    setExpandServices(!expandServices)
+    setServiceType(null)
+  }
+
+  const selectService = () => {
+    setExpandServices(false)
+  }
 
   return (
     <div className={styles.serviceWrapper}>
@@ -17,9 +25,12 @@ const Services = ({dms}) => {
         <h3>{shortDescription}</h3>
       </div>
       <div className={styles.btnContainer}>
+        <div className={styles.expandBtn} onClick={displayServiceBtn}>
+          <span>Expand</span>
+        </div>
         {services.map((serviceName, index) => {
           return (
-            <button className={styles.navBtn} key={index} onClick={() => (setServiceType(serviceName.type))}>{serviceName.type}</button>
+            <button className={`${styles.navBtn} ${expandServices ? styles.displayNavBtn : ""}`} key={index} onClick={() => (setServiceType(serviceName.type)) (selectService())}>{serviceName.type}</button>
           )
         })}
       </div>
