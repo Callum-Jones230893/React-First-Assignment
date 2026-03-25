@@ -1,10 +1,9 @@
-// import styles from "./serviceSelector.module.css"
 import ServiceContent from "../ServiceContent";
 import { servicePicker } from "../../data/data"
 
 const ServiceSelector = ({selectedService}) => {
   const selected = servicePicker(selectedService)
-  // console.log(picked)
+
   return (
     <div>
       {selected.map((serviceType, index) => (
@@ -13,5 +12,7 @@ const ServiceSelector = ({selectedService}) => {
     </div>
   )
 }
+
+// add an image slider with before and after (otherwise component might be doing too little to justify a component)
 
 export default ServiceSelector

@@ -8,17 +8,19 @@ const DropDownMenu = ({pageName, updatePage}) => {
 
   const handleClick = () => {
     setDisplayMenu(!displayMenu)
-    !displayMenu ? document.body.classList.add(`menuScroll`)
-                 : document.body.classList.remove(`menuScroll`)
+    !displayMenu ? document.body.style.overflow = 'hidden'
+                 : document.body.style.overflow = 'unset'
   }
 
   const clickPage = (pageTitle) => {
     updatePage(pageTitle)
+    setDisplayMenu(false)
+    document.body.style.overflow = 'unset'
   }
 
   return (
     <div className={styles.dropDown}>
-      <FanIcon size={32} onClick={handleClick} />
+      <FanIcon size={32} className={`${styles.icon} ${displayMenu ? styles.iconOpen : ""}`} onClick={handleClick} />
       {displayMenu && (
         <div className={styles.displayOverlay} onClick={handleClick}></div>
       )}

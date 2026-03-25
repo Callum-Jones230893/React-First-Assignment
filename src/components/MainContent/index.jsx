@@ -21,20 +21,20 @@ const MainContent = ({updateHome, dms}) => {
         </div>
         <div className={styles.sideContainer}>
           <div className={styles.sideCard}>
-            <h3>15</h3>
-            <p></p>
+            <h3>5+</h3>
+            <p>Years of experience.</p>
           </div>
           <div className={styles.sideCard}>
-            <h3>15</h3>
-            <p></p>
+            <h3>3+</h3>
+            <p>Awards for Customer Service.</p>
           </div>
           <div className={styles.sideCard}>
-            <h3>15</h3>
-            <p></p>
+            <h3>8+</h3>
+            <p>Certifications</p>
           </div>
         </div>
       </div>
-      <CoreServices />
+      <CoreServices dms={dms} />
     </div>
   )
 }

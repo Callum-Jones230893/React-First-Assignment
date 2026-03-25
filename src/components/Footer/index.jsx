@@ -3,7 +3,7 @@ import styles from "./footer.module.css"
 const Footer = () => {
   return (
     <div className={styles.footerWrapper}>
-      <p>This is a footer</p>
+      <h4>&copy; Callum Jones</h4>
     </div>
   )
 }

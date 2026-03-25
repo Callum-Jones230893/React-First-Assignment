@@ -2,11 +2,20 @@
   color: white;
   display: flex;
   flex-direction: column;
-  width: 50vw;
+  white-space: pre-line;
+  width: 20%;
+}
+
+@media (max-width: 1024px) {
+  .aboutWrapper {
+    width: 80vw;
+  }
 }
 
 .pageTitle {
+  color: #2C85D3;
   font-size: 2rem;
+  text-align: center;
 }
 
 .descriptionWrapper {
@@ -16,4 +25,18 @@
 
 .pageDescription {
   color: rgb(165, 165, 165);
+}
+
+.aboutImageWrapper {
+  display: flex;
+  height: auto;
+  margin: 20px auto;
+  padding-top: 24px;
+  width: 200px;
+}
+
+.aboutImage {
+  height: auto;
+  object-fit: cover;
+  width: 100%;
 }

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inconsolata:wght@200..900&family=Slabo+27px&display=swap');
+
+
 :root {
   --color-background: #07111c;
   --color-button: #38bff80c;
@@ -8,6 +11,7 @@ html,
 body {
   background-color: var(--color-background);
   display: flex;
+  font-family: "Slabo";
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
@@ -34,7 +38,8 @@ body {
 }
 
 h1 ,h2, h3, h4 {
-  font-weight: bold;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
 }
 
 button {
@@ -56,6 +61,7 @@ button:hover {
   transition: all 300ms ease-in;
 }
 
-.menuScroll {
-  overflow: hidden;
+p {
+  font-size: 18px;
+  letter-spacing: 1px;
 }
