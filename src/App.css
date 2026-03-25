@@ -30,6 +30,7 @@ body {
   flex-direction: column;
   margin: 0 auto;
   min-height: 100vh;
+  min-width: 100vw;
 }
 
 h1 ,h2, h3, h4 {
