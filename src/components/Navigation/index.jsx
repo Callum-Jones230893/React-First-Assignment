@@ -11,11 +11,9 @@ const Navigation = ({changePage, pageName}) => {
   return (
     <>
       <div className={styles.navWrapper}>
-        {pageName.map((pageName, index) => {
-          return  (
-            <button className={styles.navBtn} key={index} onClick={() => (handleClick(pageName.value))}>{pageName.name}</button>
-          )
-        })}
+        {pageName.map((pageName, index) => 
+          <button className={styles.navBtn} key={index} onClick={() => (handleClick(pageName.value))}>{pageName.name}</button>
+        )}
       </div> 
       <DropDownMenu pageName={pageName} updatePage={changePage} />
     </>

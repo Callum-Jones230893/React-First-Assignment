@@ -13,14 +13,12 @@ const CoreServices = () => {
       </div>
       <h3 className={styles.coreTitle}>Core Services</h3>
       <div className={styles.coreCardContainer}>
-        {services.slice(0,4).map((service, index) => {
-          return (
-            <div className={styles.coreCard} key={index}>
-              <h4 className={styles.coreCardSubtitle}>{service.title}</h4>
-              <p className={styles.coreSummary}>{service.description}</p>
-            </div>
-          )
-        })}
+        {services.slice(0,4).map((service, index) => 
+          <div className={styles.coreCard} key={index}>
+            <h4 className={styles.coreCardSubtitle}>{service.title}</h4>
+            <p className={styles.coreSummary}>{service.description}</p>
+          </div>
+        )}
       </div>
     </div>
   )

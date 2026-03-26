@@ -26,10 +26,8 @@ const DropDownMenu = ({pageName, updatePage}) => {
       )}
         <div className={`${styles.dropDownContent} ${displayMenu ? styles.displayDropDown : ``}`}>
           {pageName.map((pageName, index) => 
-            {return (
-              <button className={styles.menuBtn} key={index} onClick={() => (clickPage(pageName.value))}>{pageName.name}</button>
-            )
-          })}
+            <button className={styles.menuBtn} key={index} onClick={() => (clickPage(pageName.value))}>{pageName.name}</button>
+          )}
         </div>
     </div>
   )

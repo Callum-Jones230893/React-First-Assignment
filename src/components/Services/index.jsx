@@ -29,11 +29,9 @@ const Services = ({dms}) => {
         {!expandServices ? <ArrowDownIcon size={24} color="#ffffff" /> : <ArrowUpIcon size={24} color="#ffffff" />}
       </div>
       <div className={styles.btnContainer}>
-        {services.map((serviceName, index) => {
-          return (
-            <button className={`${styles.navBtn} ${expandServices ? styles.displayNavBtn : ""}`} key={index} onClick={() => (setServiceType(serviceName.type)) (selectService())}>{serviceName.type}</button>
-          )
-        })}
+        {services.map((serviceName, index) => 
+          <button className={`${styles.navBtn} ${expandServices ? styles.displayNavBtn : ""}`} key={index} onClick={() => (setServiceType(serviceName.type)) (selectService())}>{serviceName.type}</button>
+        )}
       </div>
       <div className={`${styles.serviceCard} ${!serviceType ? styles.serviceBackground : ""}`}>
         {serviceType && <ServiceSelector selectedService={serviceType} />}
